@@ -62,17 +62,6 @@ The examples emphasise that VQE and QAOA are hybrid, heuristic methods. Measurem
 
 The `part02` notebook currently imports `CustomPenaltySolver` from a `custom_penalty` module. That module is not present in the current repository tree, so the notebook requires that module to be supplied separately or added before the `part02` exercise is run.
 
-## Current example instances
-
-The `part01` knapsack notebooks use the same instance as the `part02` tutorial:
-
-```text
-values   = [5, 10, 20, 30, 35, 40]
-weights  = [3, 5, 6, 7, 9, 10]
-capacity = 14
-```
-
-The classical optimum has objective value **50**. The TSP notebooks use the same four-city random instance generated with seed `135`; its classical optimum has tour cost **229**. Both local TSP notebooks have been tuned to recover a feasible solution with a 0% optimality gap while keeping the circuit depth suitable for workshop inspection.
 
 ## Installation
 
