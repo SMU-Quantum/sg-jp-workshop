@@ -17,7 +17,7 @@ Participants are introduced to:
 
 ### People and organisations
 
-- **Prof. Hoong Chuin Lau** — Professor of Computer Science at [Singapore Management University](https://www.smu.edu.sg/). See his [SMU faculty profile](https://faculty.smu.edu.sg/profile/lau-hoong-chuin-631) and [research homepage](https://www.mysmu.edu/faculty/hclau/).
+- **Prof. Hoong Chuin Lau** — Professor of Computer Science at [Singapore Management University](https://www.smu.edu.sg/). See his [SMU faculty profile](https://faculty.smu.edu.sg/profile/lau-hoong-chuin-631) and [research homepage](http://www.mysmu.edu/faculty/hclau/).
 - **Prof. Masayuki Ohzeki** — Professor at [Tohoku University](https://www.tohoku.ac.jp/en/). See his [Tohoku University researcher profile](https://www.r-info.tohoku.ac.jp/en/d343b5fd84dd9eb2b5b385fccf39675d.html) and [researchmap profile](https://researchmap.jp/altema222).
 - **Singapore Management University (SMU)** contributes the Singapore research and teaching context, including the SMU Quantum Optimisation Group showcase.
 - **Tohoku University** leads the QI4U programme and contributes the Japanese quantum optimisation programme and research team.
@@ -60,7 +60,6 @@ The examples emphasise that VQE and QAOA are hybrid, heuristic methods. Measurem
 | [`.env.example`](.env.example) | Safe template for IBM Quantum credentials; the real `.env` must remain local. |
 | [`.gitignore`](.gitignore) | Excludes credentials, virtual environments, and generated local files. |
 
-The `part02` notebook currently imports `CustomPenaltySolver` from a `custom_penalty` module. That module is not present in the current repository tree, so the notebook requires that module to be supplied separately or added before the `part02` exercise is run.
 
 
 ## Installation
