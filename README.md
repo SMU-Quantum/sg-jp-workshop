@@ -69,7 +69,7 @@ The repository uses **Python 3.11** and a local `.venv` managed with [`uv`](http
 ### macOS/Linux
 
 ```bash
-uv venv --python 3.11 .venv
+uv venv --python 3.12 .venv
 source .venv/bin/activate
 uv pip install --python .venv/bin/python -r requirements.txt
 ```
@@ -77,7 +77,7 @@ uv pip install --python .venv/bin/python -r requirements.txt
 ### Windows PowerShell
 
 ```powershell
-uv venv --python 3.11 .venv
+uv venv --python 3.12 .venv
 .venv\Scripts\Activate.ps1
 uv pip install --python .venv\Scripts\python.exe -r requirements.txt
 ```
