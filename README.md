@@ -64,7 +64,7 @@ The examples emphasise that VQE and QAOA are hybrid, heuristic methods. Measurem
 
 ## Installation
 
-The repository uses **Python 3.11** and a local `.venv` managed with [`uv`](https://docs.astral.sh/uv/). The pinned environment uses Qiskit 1.4.1 and Qiskit IBM Runtime 0.40.0.
+The repository uses **Python 3.12** and a local `.venv` managed with [`uv`](https://docs.astral.sh/uv/). The pinned environment uses Qiskit and Qiskit IBM Runtime.
 
 ### macOS/Linux
 
