@@ -33,7 +33,9 @@ See the [official QI4U Singapore page](https://altema.is.tohoku.ac.jp/expo/singa
 
 ## What this repository teaches
 
-The notebooks use small, inspectable examples to demonstrate the complete optimisation workflow:
+The materials use small, inspectable examples to demonstrate practical optimisation workflows. The quantum-annealing case study introduces the number partitioning problem, derives its QUBO formulation, and samples solutions with simulated quantum annealing (SQA) using the D-Wave Ocean SDK.
+
+The gate-based notebooks demonstrate the following workflow:
 
 1. define a classical optimisation problem;
 2. obtain a classical reference solution;
@@ -49,6 +51,8 @@ The examples emphasise that VQE and QAOA are hybrid, heuristic methods. Measurem
 
 | Path | Purpose |
 | --- | --- |
+| [`annealing/CaseStudy/QI4U_Case_Study_slides.pdf`](annealing/CaseStudy/QI4U_Case_Study_slides.pdf) | Slides for a quantum-annealing case study: number partitioning, QUBO formulation, sampling, and interpretation. |
+| [`annealing/CaseStudy/QI4U_Case_Study_code.ipynb`](annealing/CaseStudy/QI4U_Case_Study_code.ipynb) | A 20–30 minute Google Colab exercise that solves a five-item number partitioning problem with Ocean SDK simulated quantum annealing. |
 | [`part01/knapsack_vqe.ipynb`](part01/knapsack_vqe.ipynb) | Six-item knapsack solved with VQE and local Aer simulation. |
 | [`part01/knapsack_qaoa.ipynb`](part01/knapsack_qaoa.ipynb) | The same six-item knapsack solved with QAOA and local Aer simulation. |
 | [`part01/tsp_vqe.ipynb`](part01/tsp_vqe.ipynb) | Four-city travelling salesperson problem solved with a shallow VQE ansatz. |
@@ -99,7 +103,7 @@ After activating the environment:
 jupyter lab
 ```
 
-Open a notebook from `part01` or `part02` and run its cells from top to bottom. The simulator notebooks use Qiskit's local `AerSimulator`, so they do not require cloud credentials.
+Open a notebook from `annealing/CaseStudy`, `part01`, or `part02` and run its cells from top to bottom. The annealing case study is designed for Google Colab and installs its pinned `dwave-samplers` dependency in the setup cell. The gate-based simulator notebooks use Qiskit's local `AerSimulator`, so they do not require cloud credentials.
 
 If `jupyter lab` reports `jupyter-lab` not found, reinstall into the active environment and launch the executable directly:
 
@@ -111,7 +115,7 @@ uv pip install --python .venv/bin/python -r requirements.txt
 
 On Windows PowerShell, use `.venv\Scripts\Activate.ps1`, `.venv\Scripts\python.exe`, and `.venv\Scripts\jupyter.exe`.
 
-## Suggested teaching sequence
+## Suggested teaching sequence in Gate-based
 
 1. Start with [`part01/knapsack_vqe.ipynb`](part01/knapsack_vqe.ipynb) or [`part01/knapsack_qaoa.ipynb`](part01/knapsack_qaoa.ipynb) to establish the optimisation-to-QUBO workflow.
 2. Compare the VQE and QAOA notebooks on the shared knapsack instance.
