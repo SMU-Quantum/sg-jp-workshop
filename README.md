@@ -60,6 +60,7 @@ The examples emphasise that VQE and QAOA are hybrid, heuristic methods. Measurem
 | [`gate_based/part01_qaoa_vqe_ibm_hardware/ibm_hardware_qaoa.ipynb`](gate_based/part01_qaoa_vqe_ibm_hardware/ibm_hardware_qaoa.ipynb) | Local QAOA optimisation followed by IBM backend checks, pre-/post-transpilation comparison, per-qubit error inspection, and optional QPU submission. |
 | [`gate_based/part01_qaoa_vqe_ibm_hardware/monitor_ibm_job.py`](gate_based/part01_qaoa_vqe_ibm_hardware/monitor_ibm_job.py) | Read-only command-line monitor for an existing IBM Runtime job. |
 | [`gate_based/part02_custom_penalty/custom-penalty.ipynb`](gate_based/part02_custom_penalty/custom_penalty.ipynb) | Custom-penalty formulation for constrained binary optimisation. |
+| [`gate_based/part02_custom_penalty/example_problems.ipynb`](gate_based/part02_custom_penalty/example_problems.ipynb) | Some interesting problems to solve during the workshop. | 
 | [`requirements.txt`](requirements.txt) | Pinned Python dependencies for the workshop environment. |
 | [`.env.example`](.env.example) | Safe template for IBM Quantum credentials; the real `.env` must remain local. |
 | [`.gitignore`](.gitignore) | Excludes credentials, virtual environments, and generated local files. |
