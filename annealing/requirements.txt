@@ -1,0 +1,11 @@
+ipykernel
+jupyterlab
+matplotlib
+networkx
+numpy
+osmnx
+pandas
+dwave-samplers==1.8.0
+dwave-system
+pip
+yfinance
