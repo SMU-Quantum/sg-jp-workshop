@@ -53,13 +53,13 @@ The examples emphasise that VQE and QAOA are hybrid, heuristic methods. Measurem
 | --- | --- |
 | [`annealing/QI4U_Case_Study_slides.pdf`](annealing/QI4U_Case_Study_slides.pdf) | Slides for a quantum-annealing case study: number partitioning, QUBO formulation, sampling, and interpretation. |
 | [`annealing/QI4U_Case_Study_code.ipynb`](annealing/QI4U_Case_Study_code.ipynb) | A 20–30 minute Google Colab exercise that solves a five-item number partitioning problem with Ocean SDK simulated quantum annealing. |
-| [`part01_qaoa_vqe_ibm_hardware/knapsack_vqe.ipynb`](part01_qaoa_vqe_ibm_hardware/knapsack_vqe.ipynb) | Six-item knapsack solved with VQE and local Aer simulation. |
-| [`part01_qaoa_vqe_ibm_hardware/knapsack_qaoa.ipynb`](part01_qaoa_vqe_ibm_hardware/knapsack_qaoa.ipynb) | The same six-item knapsack solved with QAOA and local Aer simulation. |
-| [`part01_qaoa_vqe_ibm_hardware/tsp_vqe.ipynb`](part01_qaoa_vqe_ibm_hardware/tsp_vqe.ipynb) | Four-city travelling salesperson problem solved with a shallow VQE ansatz. |
-| [`part01_qaoa_vqe_ibm_hardware/tsp_qaoa.ipynb`](part01_qaoa_vqe_ibm_hardware/tsp_qaoa.ipynb) | Four-city travelling salesperson problem solved with two-layer QAOA. |
-| [`part01_qaoa_vqe_ibm_hardware/ibm_hardware_qaoa.ipynb`](part01_qaoa_vqe_ibm_hardware/ibm_hardware_qaoa.ipynb) | Local QAOA optimisation followed by IBM backend checks, pre-/post-transpilation comparison, per-qubit error inspection, and optional QPU submission. |
-| [`part01_qaoa_vqe_ibm_hardware/monitor_ibm_job.py`](part01_qaoa_vqe_ibm_hardware/monitor_ibm_job.py) | Read-only command-line monitor for an existing IBM Runtime job. |
-| [`part02_part02_custom_penalty/custom-penalty.ipynb`](part02_custom_penalty/custom-penalty.ipynb) | Custom-penalty formulation for constrained binary optimisation. |
+| [`gate_based/part01_qaoa_vqe_ibm_hardware/knapsack_vqe.ipynb`](gate_based/part01_qaoa_vqe_ibm_hardware/knapsack_vqe.ipynb) | Six-item knapsack solved with VQE and local Aer simulation. |
+| [`gate_based/part01_qaoa_vqe_ibm_hardware/knapsack_qaoa.ipynb`](gate_based/part01_qaoa_vqe_ibm_hardware/knapsack_qaoa.ipynb) | The same six-item knapsack solved with QAOA and local Aer simulation. |
+| [`gate_based/part01_qaoa_vqe_ibm_hardware/tsp_vqe.ipynb`](gate_based/part01_qaoa_vqe_ibm_hardware/tsp_vqe.ipynb) | Four-city travelling salesperson problem solved with a shallow VQE ansatz. |
+| [`gate_based/part01_qaoa_vqe_ibm_hardware/tsp_qaoa.ipynb`](gate_based/part01_qaoa_vqe_ibm_hardware/tsp_qaoa.ipynb) | Four-city travelling salesperson problem solved with two-layer QAOA. |
+| [`gate_based/part01_qaoa_vqe_ibm_hardware/ibm_hardware_qaoa.ipynb`](gate_based/part01_qaoa_vqe_ibm_hardware/ibm_hardware_qaoa.ipynb) | Local QAOA optimisation followed by IBM backend checks, pre-/post-transpilation comparison, per-qubit error inspection, and optional QPU submission. |
+| [`gate_based/part01_qaoa_vqe_ibm_hardware/monitor_ibm_job.py`](gate_based/part01_qaoa_vqe_ibm_hardware/monitor_ibm_job.py) | Read-only command-line monitor for an existing IBM Runtime job. |
+| [`gate_based/part02_gate_based/part02_custom_penalty/custom-penalty.ipynb`](gate_based/part02_custom_penalty/custom-penalty.ipynb) | Custom-penalty formulation for constrained binary optimisation. |
 | [`requirements.txt`](requirements.txt) | Pinned Python dependencies for the workshop environment. |
 | [`.env.example`](.env.example) | Safe template for IBM Quantum credentials; the real `.env` must remain local. |
 | [`.gitignore`](.gitignore) | Excludes credentials, virtual environments, and generated local files. |
@@ -103,7 +103,7 @@ After activating the environment:
 jupyter lab
 ```
 
-Open a notebook from `annealing/CaseStudy`, `part01`, or `part02` and run its cells from top to bottom. The annealing case study is designed for Google Colab and installs its pinned `dwave-samplers` dependency in the setup cell. The gate-based simulator notebooks use Qiskit's local `AerSimulator`, so they do not require cloud credentials.
+Open a notebook from `annealing`, `gate_based/part01_qaoa_vqe_ibm_hardware`, or `gate_based/part02_custom_penalty` and run its cells from top to bottom. The annealing case study is designed for Google Colab and installs its pinned `dwave-samplers` dependency in the setup cell. The gate-based simulator notebooks use Qiskit's local `AerSimulator`, so they do not require cloud credentials.
 
 If `jupyter lab` reports `jupyter-lab` not found, reinstall into the active environment and launch the executable directly:
 
@@ -117,11 +117,11 @@ On Windows PowerShell, use `.venv\Scripts\Activate.ps1`, `.venv\Scripts\python.e
 
 ## Suggested teaching sequence in Gate-based
 
-1. Start with [`part01_qaoa_vqe_ibm_hardware/knapsack_vqe.ipynb`](part01_qaoa_vqe_ibm_hardware/knapsack_vqe.ipynb) or [`part01_qaoa_vqe_ibm_hardware/knapsack_qaoa.ipynb`](part01_qaoa_vqe_ibm_hardware/knapsack_qaoa.ipynb) to establish the optimisation-to-QUBO workflow.
+1. Start with [`gate_based/part01_qaoa_vqe_ibm_hardware/knapsack_vqe.ipynb`](gate_based/part01_qaoa_vqe_ibm_hardware/knapsack_vqe.ipynb) or [`gate_based/part01_qaoa_vqe_ibm_hardware/knapsack_qaoa.ipynb`](gate_based/part01_qaoa_vqe_ibm_hardware/knapsack_qaoa.ipynb) to establish the optimisation-to-QUBO workflow.
 2. Compare the VQE and QAOA notebooks on the shared knapsack instance.
-3. Use [`part01_qaoa_vqe_ibm_hardware/tsp_vqe.ipynb`](part01_qaoa_vqe_ibm_hardware/tsp_vqe.ipynb) and [`part01_qaoa_vqe_ibm_hardware/tsp_qaoa.ipynb`](part01_qaoa_vqe_ibm_hardware/tsp_qaoa.ipynb) to extend the workflow to a four-city routing problem.
-4. Study [`part02_custom_penalty/custom-penalty.ipynb`](part02_custom_penalty/custom-penalty.ipynb) to see how constraints can be encoded without slack variables, once `custom_penalty` is available.
-5. Use [`part01_qaoa_vqe_ibm_hardware/ibm_hardware_qaoa.ipynb`](part01_qaoa_vqe_ibm_hardware/ibm_hardware_qaoa.ipynb) for the real-hardware demonstration.
+3. Use [`gate_based/part01_qaoa_vqe_ibm_hardware/tsp_vqe.ipynb`](gate_based/part01_qaoa_vqe_ibm_hardware/tsp_vqe.ipynb) and [`gate_based/part01_qaoa_vqe_ibm_hardware/tsp_qaoa.ipynb`](gate_based/part01_qaoa_vqe_ibm_hardware/tsp_qaoa.ipynb) to extend the workflow to a four-city routing problem.
+4. Study [`gate_based/part02_custom_penalty/custom-penalty.ipynb`](gate_based/part02_custom_penalty/custom-penalty.ipynb) to see how constraints can be encoded without slack variables, once `custom_penalty` is available.
+5. Use [`gate_based/part01_qaoa_vqe_ibm_hardware/ibm_hardware_qaoa.ipynb`](gate_based/part01_qaoa_vqe_ibm_hardware/ibm_hardware_qaoa.ipynb) for the real-hardware demonstration.
 6. Continue with group work: formulate a problem, choose a classical or quantum approach, run experiments, analyse limitations, and prepare a final presentation.
 
 ## IBM Quantum hardware demonstration
@@ -163,13 +163,13 @@ For the configured `ibm_quantum_platform` account, Runtime capacity may report a
 ### Monitor an existing job
 
 ```bash
-python part01/monitor_ibm_job.py <IBM_JOB_ID> --interval 30
+python gate_based/part01/monitor_ibm_job.py <IBM_JOB_ID> --interval 30
 ```
 
 Use `--once` for a single read-only status check:
 
 ```bash
-python part01/monitor_ibm_job.py <IBM_JOB_ID> --once
+python gate_based/part01/monitor_ibm_job.py <IBM_JOB_ID> --once
 ```
 
 Runtime V2 exposes job states such as `QUEUED`, `RUNNING`, `DONE`, and `CANCELLED`. Runtime V2 job objects do not generally expose an exact queue-position method, so the monitor reports queue position only when the installed API provides it.
