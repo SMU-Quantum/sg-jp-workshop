@@ -51,15 +51,15 @@ The examples emphasise that VQE and QAOA are hybrid, heuristic methods. Measurem
 
 | Path | Purpose |
 | --- | --- |
-| [`annealing/CaseStudy/QI4U_Case_Study_slides.pdf`](annealing/CaseStudy/QI4U_Case_Study_slides.pdf) | Slides for a quantum-annealing case study: number partitioning, QUBO formulation, sampling, and interpretation. |
-| [`annealing/CaseStudy/QI4U_Case_Study_code.ipynb`](annealing/CaseStudy/QI4U_Case_Study_code.ipynb) | A 20–30 minute Google Colab exercise that solves a five-item number partitioning problem with Ocean SDK simulated quantum annealing. |
-| [`part01/knapsack_vqe.ipynb`](part01/knapsack_vqe.ipynb) | Six-item knapsack solved with VQE and local Aer simulation. |
-| [`part01/knapsack_qaoa.ipynb`](part01/knapsack_qaoa.ipynb) | The same six-item knapsack solved with QAOA and local Aer simulation. |
-| [`part01/tsp_vqe.ipynb`](part01/tsp_vqe.ipynb) | Four-city travelling salesperson problem solved with a shallow VQE ansatz. |
-| [`part01/tsp_qaoa.ipynb`](part01/tsp_qaoa.ipynb) | Four-city travelling salesperson problem solved with two-layer QAOA. |
-| [`part01/ibm_hardware_qaoa.ipynb`](part01/ibm_hardware_qaoa.ipynb) | Local QAOA optimisation followed by IBM backend checks, pre-/post-transpilation comparison, per-qubit error inspection, and optional QPU submission. |
-| [`part01/monitor_ibm_job.py`](part01/monitor_ibm_job.py) | Read-only command-line monitor for an existing IBM Runtime job. |
-| [`part02/custom-penalty.ipynb`](part02/custom-penalty.ipynb) | Custom-penalty formulation for constrained binary optimisation. |
+| [`annealing/QI4U_Case_Study_slides.pdf`](annealing/QI4U_Case_Study_slides.pdf) | Slides for a quantum-annealing case study: number partitioning, QUBO formulation, sampling, and interpretation. |
+| [`annealing/QI4U_Case_Study_code.ipynb`](annealing/QI4U_Case_Study_code.ipynb) | A 20–30 minute Google Colab exercise that solves a five-item number partitioning problem with Ocean SDK simulated quantum annealing. |
+| [`qaoa_vqe_ibm_hardware/knapsack_vqe.ipynb`](qaoa_vqe_ibm_hardware/knapsack_vqe.ipynb) | Six-item knapsack solved with VQE and local Aer simulation. |
+| [`qaoa_vqe_ibm_hardware/knapsack_qaoa.ipynb`](qaoa_vqe_ibm_hardware/knapsack_qaoa.ipynb) | The same six-item knapsack solved with QAOA and local Aer simulation. |
+| [`qaoa_vqe_ibm_hardware/tsp_vqe.ipynb`](qaoa_vqe_ibm_hardware/tsp_vqe.ipynb) | Four-city travelling salesperson problem solved with a shallow VQE ansatz. |
+| [`qaoa_vqe_ibm_hardware/tsp_qaoa.ipynb`](qaoa_vqe_ibm_hardware/tsp_qaoa.ipynb) | Four-city travelling salesperson problem solved with two-layer QAOA. |
+| [`qaoa_vqe_ibm_hardware/ibm_hardware_qaoa.ipynb`](qaoa_vqe_ibm_hardware/ibm_hardware_qaoa.ipynb) | Local QAOA optimisation followed by IBM backend checks, pre-/post-transpilation comparison, per-qubit error inspection, and optional QPU submission. |
+| [`qaoa_vqe_ibm_hardware/monitor_ibm_job.py`](qaoa_vqe_ibm_hardware/monitor_ibm_job.py) | Read-only command-line monitor for an existing IBM Runtime job. |
+| [`custom_penalty/custom-penalty.ipynb`](custom_penalty/custom-penalty.ipynb) | Custom-penalty formulation for constrained binary optimisation. |
 | [`requirements.txt`](requirements.txt) | Pinned Python dependencies for the workshop environment. |
 | [`.env.example`](.env.example) | Safe template for IBM Quantum credentials; the real `.env` must remain local. |
 | [`.gitignore`](.gitignore) | Excludes credentials, virtual environments, and generated local files. |
@@ -117,11 +117,11 @@ On Windows PowerShell, use `.venv\Scripts\Activate.ps1`, `.venv\Scripts\python.e
 
 ## Suggested teaching sequence in Gate-based
 
-1. Start with [`part01/knapsack_vqe.ipynb`](part01/knapsack_vqe.ipynb) or [`part01/knapsack_qaoa.ipynb`](part01/knapsack_qaoa.ipynb) to establish the optimisation-to-QUBO workflow.
+1. Start with [`qaoa_vqe_ibm_hardware/knapsack_vqe.ipynb`](qaoa_vqe_ibm_hardware/knapsack_vqe.ipynb) or [`qaoa_vqe_ibm_hardware/knapsack_qaoa.ipynb`](qaoa_vqe_ibm_hardware/knapsack_qaoa.ipynb) to establish the optimisation-to-QUBO workflow.
 2. Compare the VQE and QAOA notebooks on the shared knapsack instance.
-3. Use [`part01/tsp_vqe.ipynb`](part01/tsp_vqe.ipynb) and [`part01/tsp_qaoa.ipynb`](part01/tsp_qaoa.ipynb) to extend the workflow to a four-city routing problem.
-4. Study [`part02/custom-penalty.ipynb`](part02/custom-penalty.ipynb) to see how constraints can be encoded without slack variables, once `custom_penalty` is available.
-5. Use [`part01/ibm_hardware_qaoa.ipynb`](part01/ibm_hardware_qaoa.ipynb) for the real-hardware demonstration.
+3. Use [`qaoa_vqe_ibm_hardware/tsp_vqe.ipynb`](qaoa_vqe_ibm_hardware/tsp_vqe.ipynb) and [`qaoa_vqe_ibm_hardware/tsp_qaoa.ipynb`](qaoa_vqe_ibm_hardware/tsp_qaoa.ipynb) to extend the workflow to a four-city routing problem.
+4. Study [`custom_penalty/custom-penalty.ipynb`](custom_penalty/custom-penalty.ipynb) to see how constraints can be encoded without slack variables, once `custom_penalty` is available.
+5. Use [`qaoa_vqe_ibm_hardware/ibm_hardware_qaoa.ipynb`](qaoa_vqe_ibm_hardware/ibm_hardware_qaoa.ipynb) for the real-hardware demonstration.
 6. Continue with group work: formulate a problem, choose a classical or quantum approach, run experiments, analyse limitations, and prepare a final presentation.
 
 ## IBM Quantum hardware demonstration
