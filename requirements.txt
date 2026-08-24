@@ -1,24 +1,3 @@
-cplex
-docplex
-ipykernel
-ipython
-jupyter_client
-jupyter_core
-jupyterlab
-matplotlib
-matplotlib-inline
-networkx
-numpy
-pandas
-pillow
-pylatexenc
-python-dotenv
-qiskit
-qiskit-aer
-qiskit-algorithms
-qiskit-ibm-runtime
-qiskit-optimization
-rustworkx
-scipy
-sympy
-custom-penalty
+# Complete workshop environment assembled from both track-specific manifests.
+-r gate_based/requirements.txt
+-r annealing/requirements.txt
