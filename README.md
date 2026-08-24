@@ -92,11 +92,3 @@ On Windows PowerShell, use `.venv\Scripts\Activate.ps1`, `.venv\Scripts\python.e
 - Internet access is required when a notebook downloads map data, market data, or connects to a cloud service.
 
 Track-specific setup and execution details are in the [gate-based guide](gate_based/README.md) and [quantum-annealing guide](annealing/README.md).
-
-## Further information
-
-- [QI4U in Singapore — Quantum Universe EXPO](https://altema.is.tohoku.ac.jp/expo/singapore/en/)
-- [Japan–Singapore Workshop event page — A*STAR / Glue Up](https://a-star-engagementportal.glueup.com/event/japan-singapore-workshop-on-applied-quantum-optimisation-182741/)
-- [Singapore Management University](https://www.smu.edu.sg/)
-- [A*STAR](https://www.a-star.edu.sg/)
-- [National Quantum Computing Hub](https://nqch.sg/)
