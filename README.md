@@ -25,7 +25,7 @@ Before proceeding to these tutorials, complete the environment setup described b
 | Track | Guide | Topics |
 | --- | --- | --- |
 | Gate-based quantum computing | [Gate-based tutorial guide](gate_based/README.md) | QUBO and Ising formulations, VQE, QAOA, custom penalties, local Aer simulation, and optional IBM Quantum hardware execution |
-| Quantum annealing | [Quantum-annealing tutorial guide](annealing/README.md) | Number partitioning, traffic-congestion reduction, portfolio optimisation, simulated annealing/SQA, and optional D-Wave QPU execution |
+| Quantum annealing | [Quantum-annealing tutorial guide](annealing/README.md) | Number partitioning, traffic-congestion reduction, portfolio optimisation, simulated annealing (SA), and optional D-Wave QPU execution |
 
 ## Installation
 

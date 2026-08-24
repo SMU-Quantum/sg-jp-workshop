@@ -11,16 +11,16 @@ For the supported Python 3.12 environment and JupyterLab instructions, see the [
 | Path | Purpose |
 | --- | --- |
 | [`CaseStudy/QI4U_Case_Study_slides.pdf`](CaseStudy/QI4U_Case_Study_slides.pdf) | Slides introducing quantum annealing, number partitioning, QUBO formulation, sampling, and interpretation. |
-| [`CaseStudy/QI4U_Case_Study_code.ipynb`](CaseStudy/QI4U_Case_Study_code.ipynb) | A short exercise that derives a five-item number-partitioning QUBO and solves it with simulated quantum annealing (SQA). |
+| [`CaseStudy/QI4U_Case_Study_code.ipynb`](CaseStudy/QI4U_Case_Study_code.ipynb) | A short exercise that derives a five-item number-partitioning QUBO and solves it with simulated annealing (SA). |
 | [`Handson1/QI4U_Handson1_Traffic_Congestion_Reduction.ipynb`](Handson1/QI4U_Handson1_Traffic_Congestion_Reduction.ipynb) | Route assignment around Singapore Management University, including OpenStreetMap road data, congestion and one-route-per-car penalties, QUBO construction, local simulated annealing, and route visualisation. |
 | [`Handson2/QI4U_Handson2_Portfolio_Optimization.ipynb`](Handson2/QI4U_Handson2_Portfolio_Optimization.ipynb) | Portfolio optimisation with market data, return/budget/asset-class/volatility terms, local simulated annealing, optional D-Wave QPU sampling, and backtesting. |
 
 ## Suggested teaching sequence
 
-1. Begin with the case-study slides and notebook. Derive the number-partitioning QUBO by hand, inspect its matrix, sample it with SQA, and decode the best bitstring.
+1. Begin with the case-study slides and notebook. Derive the number-partitioning QUBO by hand, inspect its matrix, sample it with SA, and decode the best bitstring.
 2. Continue with Hands-on 1. Build a road-network routing problem from map data, translate congestion and route-choice constraints into a QUBO, and visualise the selected routes.
 3. Continue with Hands-on 2. Encode fractional asset weights with binary variables, combine several penalty terms, assess feasible samples, and compare the resulting portfolio in a backtest.
-4. If D-Wave Leap access is available, run the optional QPU section in Hands-on 2 and compare its samples with the local simulated-annealing result.
+4. Review the optional QPU section in Hands-on 2 as reference material. Workshop participants will not run this section; outside the workshop, users with D-Wave Leap access may compare its samples with the local simulated-annealing result.
 
 ## Execution notes
 
