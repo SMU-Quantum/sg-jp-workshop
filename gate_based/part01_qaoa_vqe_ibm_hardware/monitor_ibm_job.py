@@ -6,6 +6,7 @@ import time
 from datetime import datetime
 from pathlib import Path
 
+# pyrefly: ignore [missing-import]
 from dotenv import load_dotenv
 from qiskit_ibm_runtime import QiskitRuntimeService
 
