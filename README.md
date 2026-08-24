@@ -2,7 +2,7 @@
 
 This repository contains the tutorial material for the [Japan–Singapore Workshop on Applied Quantum Optimisation](https://a-star-engagementportal.glueup.com/event/japan-singapore-workshop-on-applied-quantum-optimisation-182741/), part of Tohoku University's [Quantum Infinity for You (QI4U) in Singapore](https://altema.is.tohoku.ac.jp/expo/singapore/en/) programme.
 
-The workshop takes place in Singapore from **25–27 August 2026**. It combines lectures, hands-on tutorials, real quantum-hardware demonstrations, industry-inspired optimisation problems, and collaborative project work. The workshop is designed to connect participants from Singapore and Japan with practical quantum computing, artificial intelligence, and optimisation.
+It combines lectures, hands-on tutorials, real quantum-hardware demonstrations, industry-inspired optimisation problems, and collaborative project work. The workshop is designed to connect participants from Singapore and Japan with practical quantum computing, artificial intelligence, and optimisation.
 
 ## Workshop context
 
@@ -15,25 +15,12 @@ Participants are introduced to:
 - real-world applications in logistics, scheduling, manufacturing, healthcare, and related domains; and
 - developing, evaluating, and presenting prototype solutions in groups.
 
-### People and organisations
-
-- **Prof. Hoong Chuin Lau** — Professor of Computer Science at [Singapore Management University](https://www.smu.edu.sg/). See his [SMU faculty profile](https://faculty.smu.edu.sg/profile/lau-hoong-chuin-631) and [research homepage](http://www.mysmu.edu/faculty/hclau/).
-- **Prof. Masayuki Ohzeki** — Professor at [Tohoku University](https://www.tohoku.ac.jp/en/). See his [Tohoku University researcher profile](https://www.r-info.tohoku.ac.jp/en/d343b5fd84dd9eb2b5b385fccf39675d.html) and [researchmap profile](https://researchmap.jp/altema222).
-- **Singapore Management University (SMU)** contributes the Singapore research and teaching context, including the SMU Quantum Optimisation Group showcase.
-- **Tohoku University** leads the QI4U programme and contributes the Japanese quantum optimisation programme and research team.
-- **A*STAR** hosts the event portal and the Singapore venue at the Innovis Building. The workshop is connected with the [National Quantum Computing Hub](https://nqch.sg), a national initiative involving the [A*STAR Institute of High Performance Computing](https://www.a-star.edu.sg/ihpc), the Centre for Quantum Technologies, and the National Supercomputing Centre Singapore.
-
-### Event venue
-
-Multi-Purpose Hall, Innovis Building #01-01<br>
-2 Fusionopolis Way<br>
-Singapore 138634
-
-See the [official QI4U Singapore page](https://altema.is.tohoku.ac.jp/expo/singapore/en/) and the [A*STAR event page](https://a-star-engagementportal.glueup.com/event/japan-singapore-workshop-on-applied-quantum-optimisation-182741/) for the programme and event information.
 
 ## Tutorial tracks
 
 The workshop material is divided into two independent tracks. Each track has its own guide, notebook index, suggested teaching sequence, and service-specific notes.
+
+Before proceeding to these tutorials, complete the environment setup described below.
 
 | Track | Guide | Topics |
 | --- | --- | --- |

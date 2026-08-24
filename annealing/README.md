@@ -36,7 +36,7 @@ The notebook downloads OpenStreetMap road data through OSMnx, so its map-loading
 
 The notebook downloads historical market data with `yfinance` and stores CSV files in a local `cache/` directory. The first run for a date range requires internet access; subsequent runs can reuse the cached data.
 
-The main simulated-annealing workflow is local. The section titled “Solving it on a real quantum annealer (QPU)” is optional and requires a D-Wave Leap API token. Supply the token through the `DWAVE_API_TOKEN` environment variable or Google Colab user data when possible. If neither is present, the notebook prompts for it without echoing the value.
+The main simulated-annealing workflow is local. Workshop participants will not run the problem on a real quantum annealer during the workshop. The section titled “Solving it on a real quantum annealer (QPU)” is provided for reference and optional use outside the workshop; it requires a D-Wave Leap API token. Supply the token through the `DWAVE_API_TOKEN` environment variable or Google Colab user data when possible. If neither is present, the notebook prompts for it without echoing the value.
 
 macOS/Linux:
 
