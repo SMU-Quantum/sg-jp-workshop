@@ -15,18 +15,6 @@ Participants are introduced to:
 - real-world applications in logistics, scheduling, manufacturing, healthcare, and related domains; and
 - developing, evaluating, and presenting prototype solutions in groups.
 
-
-## Tutorial tracks
-
-The workshop material is divided into two independent tracks. Each track has its own guide, notebook index, suggested teaching sequence, and service-specific notes.
-
-Before proceeding to these tutorials, complete the environment setup described below.
-
-| Track | Guide | Topics |
-| --- | --- | --- |
-| Gate-based quantum computing | [Gate-based tutorial guide](gate_based/README.md) | QUBO and Ising formulations, VQE, QAOA, custom penalties, local Aer simulation, and optional IBM Quantum hardware execution |
-| Quantum annealing | [Quantum-annealing tutorial guide](annealing/README.md) | Number partitioning, traffic-congestion reduction, portfolio optimisation, simulated annealing (SA), and optional D-Wave QPU execution |
-
 ## Installation
 
 The repository uses **Python 3.12** and a local `.venv` managed with [`uv`](https://docs.astral.sh/uv/). The root [`requirements.txt`](requirements.txt) installs the dependencies for both tutorial tracks by combining the manifests under [`gate_based/`](gate_based/requirements.txt) and [`annealing/`](annealing/requirements.txt). Use the root manifest for the supported workshop environment.
