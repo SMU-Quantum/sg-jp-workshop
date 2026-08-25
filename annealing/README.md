@@ -6,6 +6,12 @@ The materials progress from a small, inspectable number-partitioning example to 
 
 For the supported Python 3.12 environment and JupyterLab instructions, see the [repository README](../README.md#installation). This track's package manifest is [`requirements.txt`](requirements.txt) and is included by the root environment.
 
+## Run in Google Colab
+
+The annealing tutorials can also be run in Google Colab from the [shared Google Drive folder](https://drive.google.com/drive/folders/1ifrZ9aT-W167lrEMYIF1BdW3I-EiKWLe?usp=sharing).
+
+> Install and connect the Google Colaboratory app in Google Drive before opening the notebooks.
+
 ## Contents
 
 | Path | Purpose |
